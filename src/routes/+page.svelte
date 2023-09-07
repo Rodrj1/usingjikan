@@ -152,7 +152,7 @@
 
 			<section class="hidden flex-1 xl:flex justify-center items-start p-10">
 				<picture
-					class={`sticky top-[23%] w-[65%] overflow-y-hidden ${$previewImage == '' && '!hidden'}`}
+					class={`sticky top-[23%] w-[65%] overflow-y-hidden border-b border-t py-6 border-zinc-200 ${$previewImage == '' && '!hidden'}`}
 				>
 					<img
 						id="previewImage"

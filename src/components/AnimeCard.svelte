@@ -22,7 +22,7 @@
 	>
 		<div class="flex flex-col gap-1 font-playfair">
 			<h1
-				class="text-white group-hover:text-gray-600 group-hover:opacity-50 p-1 text-lg md:text-3xl font-bold transition-all duration-700 tracking-widest"
+				class="text-white group-hover:text-gray-600 group-hover:opacity-50 p-1 text-lg md:text-3xl transition-all duration-700 tracking-widest"
 			>
 				{anime.title_japanese.toUpperCase()}
 			</h1>

@@ -81,7 +81,7 @@
 
 <div
 	id="mainWrapper"
-	class="flex bg-zinc-950 text-zinc-200 w-auto overflow-x-hidden !overflow-y-hidden"
+	class="flex bg-zinc-950 text-zinc-200 w-auto overflow-x-hidden !overflow-y-hidden max-h-[100vh]"
 >
 	<section
 		class="min-w-[100vw] base:min-w-[50vw] flex flex-col justify-center items-center px-[5%]"
