@@ -86,17 +86,17 @@
 	<section class="w-[100vw] base:min-w-[50vw] flex flex-col justify-center items-center">
 		<a href={anime.url} target="_blank">
 			<h1
-				class="text-5xl tracking-widest absolute top-[2%] left-[0%] text-white hover:text-gray-600 transition-all hover:opacity-50 text-center z-10 w-[100vw] base:w-[50vw]"
+				class="hidden md:block text-5xl tracking-widest absolute top-[2%] left-[0%] text-white hover:text-gray-600 transition-all hover:opacity-50 text-center w-[100vw] base:w-[50vw] font-playfair z-0"
 			>
 				{anime.title_japanese}
 			</h1>
 		</a>
 
 		<h2 class="text-3xl font-playfair tracking-widest text-center w-[100vw] base:w-[50vw]">
-			{anime.title} - {anime.title_english}
+			{anime.title != anime.title_english ? anime.title + "-" : ""} { anime.title_english}
 		</h2>
 
-		<ul class="flex gap-2 tracking-widest text-sm font-playfair w-[100vw] base:w-[50vw] justify-center">
+		<ul class="flex flex-col md:flex-row tracking-widest text-xs md:text-sm font-playfair justify-center gap-5 px-5 mt-5 md:mt-0 md:px-0 md:gap-2">
 			{#each anime.title_synonyms as title, i (i)}
 				{#if i < anime.title_synonyms.length - 1}
 					<li>{title} -</li>

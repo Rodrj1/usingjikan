@@ -88,14 +88,14 @@
 	>
 		<a href={manga.url} target="_blank">
 			<h1
-				class="text-5xl font-serif tracking-widest absolute top-[2%] left-[0%] text-white border-b border-transparent hover:border-b hover:border-white transition-all text-center z-10 w-[50vw]"
+				class="text-5xl hidden md:block tracking-widest absolute top-[2%] left-[0%] text-white border-b border-transparent hover:border-b hover:border-white transition-all text-center z-10 font-playfair w-[50vw]"
 			>
 				{manga.title_japanese}
 			</h1>
 		</a>
 
-		<h2 class="text-3xl font-playfair tracking-widest text-center">
-			{manga.title} - {manga.title_english}
+		<h2 class="flex flex-col md:flex-row tracking-widest text-xs md:text-sm font-playfair justify-center gap-5 px-5 mt-5 md:mt-0 md:px-0 md:gap-2">
+			{manga.title != manga.title_english ? manga.title + "-" : ""} {manga.title_english}
 		</h2>
 
 		<ul class="flex gap-2 tracking-widest text-sm font-playfair">
