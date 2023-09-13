@@ -158,7 +158,7 @@
 		{#if characters.length > 0}
 			<ul
 				id="charlist"
-				class="grid grid-rows-2 md:grid-rows-3 gap-2 font-playfair tracking-widest text-xs w-[80%] hover:cursor-grab h-auto md:h-[80%] grid-flow-col overflow-y-hidden overflow-x-hidden items-start justify-start"
+				class="grid grid-rows-2 md:grid-rows-3 gap-2 font-playfair tracking-widest text-xs w-[80%] hover:cursor-grab h-auto md:h-[80%] grid-flow-col overflow-y-hidden overflow-x-auto md:overflow-x-hidden items-start justify-start"
 			>
 				{#each characters as char}
 					<li>
