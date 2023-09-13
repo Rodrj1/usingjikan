@@ -154,11 +154,11 @@
 		</p>
 	</section>
 
-	<section class="min-w-[100vw] base:min-w-[50vw] flex justify-center items-center gap-10">
+	<section class="min-w-[100vw] base:min-w-[50vw] flex justify-center items-center">
 		{#if characters.length > 0}
 			<ul
 				id="charlist"
-				class="grid grid-rows-3 gap-2 font-playfair tracking-widest text-xs w-[80%] hover:cursor-grab h-[80%] grid-flow-col overflow-y-hidden overflow-x-hidden"
+				class="grid grid-rows-2 md:grid-rows-3 gap-2 font-playfair tracking-widest text-xs w-[80%] hover:cursor-grab h-auto md:h-[80%] grid-flow-col overflow-y-hidden overflow-x-hidden items-start justify-start"
 			>
 				{#each characters as char}
 					<li>
